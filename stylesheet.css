@@ -53,11 +53,19 @@ body
     align-items: center;
     padding: 70px 10% 0;
 }
+.home-content h1, .home-content h3{
+    text-shadow: 0 0 10 px rgba(red, green, blue, alpha);
+}
 .home-img img {
     width: 380px;
     height: 380px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #0ef;
-    box-shadow: 0 0 25px #0ef;
+    border: 3px solid #0ef;
+    box-shadow: 0 0 20px #0ef, inset 0 0 20px #0ef;
+    transition: 0.4s ease;
+}
+.home-img img:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 35px #0ef, inset 0 0 30px #0ef;
 }
